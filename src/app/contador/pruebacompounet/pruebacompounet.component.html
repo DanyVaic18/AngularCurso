@@ -1,9 +1,16 @@
 <h2>{{ textContador }}</h2>
-<button (click)="valorNum = valorNum + 1;">+1</button>
+<button (click)="sumarYrestar(+1)">Suma un numero aleatorio</button>
 <span>
   {{ valorNum }}
 </span>
-<button>-1</button>
+<button (mouseout)="sumarYrestar(-1)">Resta Suma un numero aleatorio</button>
 
 <span>{{ letra }}</span>
 <button (click)="mostrar(valorNum)">funcion cambiar letra</button>
+
+<hr>
+<h1>
+  la base es: <span style="text-decoration:underline;">{{ base }}</span>
+</h1>
+<button (click)="multiplos(+bas)">{{ bas }}</button>
+<button (click)="multiplos(-bas)">{{ bas }}</button>
