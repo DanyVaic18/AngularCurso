@@ -39,7 +39,6 @@ export class PruebacompounetComponent {
   letra: string = this.arrAbecedario[this.valorNum];
   mostrar(ale: number) {
     ale = Math.floor(Math.random() * this.arrAbecedario.length);
-    console.log(ale);
     this.letra = this.arrAbecedario[ale];
   }
 }
