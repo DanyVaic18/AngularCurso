@@ -1,0 +1,71 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontLigatures": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.fontLigatures": true,
+  
+},
+  "editor.guides.bracketPairs": true,
+  "editor.fontSize": 16.5,
+  "editor.minimap.maxColumn": 80,
+  "editor.tokenColorCustomizations": {
+    "types": "#5cbb8f",
+    "strings": "#d5bcffe7",
+    "numbers": "#1ac5c5",
+    "variables": { 
+        "fontStyle": "italic",  
+        "foreground": "#b9e5ff"
+    },
+    "functions": {
+        "fontStyle": "italic bold",
+        "foreground": "#ffdc7d"
+    },
+    "keywords": {
+        "fontStyle": "bold",
+    },
+    "comments": "#2b6349",
+    "textMateRules": [{ 
+      "scope": "support.variable",
+      "settings": {
+        "fontStyle": "italic underline",
+        "foreground": "#7dffe1"
+      },
+    },
+    {
+      "scope": "keyword.operator",
+      "settings": {
+        "foreground": "#ffffffd3",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "variable.other.readwrite",
+      "settings": {
+        "foreground": "#b9e5ff",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "scope": "variable.other",
+      "settings": {
+        "foreground": "#7adcff",
+        "fontStyle": ""
+      }
+    }
+  ]
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"[css]": {
+  "editor.defaultFormatter": "vscode.css-language-features"
+},
+"[typescript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+},
+"window.zoomLevel": 1
+}
