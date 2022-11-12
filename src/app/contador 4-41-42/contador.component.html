@@ -1,0 +1,16 @@
+
+<h1>{{ textCount }}</h1>
+<button (click)="sumarYrestar(+1)">+1</button>
+<span>
+  {{ valorNum }}
+</span>
+<button (mouseout)="sumarYrestar(-1)">-1</button>
+<hr>
+<h1>Sumando la base</h1>
+<div class="masCinco">
+  <span style="font-size: 24px;">
+    la base es: <span style="text-decoration:underline;margin-top:20px;">{{ base }}</span>
+  </span>
+  <button (click)="multiplos(+bas)">+{{ bas }}</button>
+  <button (click)="multiplos(-bas)">-{{ bas }}</button>
+</div>
