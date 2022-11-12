@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PruebacompounetComponent } from './Otrop/pruebacompounet/pruebacompounet.component';
+import { PruebacompounetComponent } from './contador/pruebacompounet/pruebacompounet.component';
 
 @NgModule({
   declarations: [
