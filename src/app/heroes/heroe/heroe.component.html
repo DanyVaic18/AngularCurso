@@ -1,0 +1,21 @@
+<h1>App-Heroe</h1>
+<dl> <!-- Etiqueta para agrupar terminos -->
+  <dt> Nombre </dt> <!-- Etiqueta titulo de termino -->
+  <dd> {{ nombre }}</dd> <!-- Etiqueta significados del termino -->
+  <dt> Edad </dt>
+  <dd> {{ edad }}</dd>
+  <dt> Get </dt>
+  <dd> {{ nombreCApitalizado }}</dd>
+  <dt> Función </dt>
+  <dd> {{ obtenerNombre() }} </dd>
+  <dt> Función Row</dt>
+  <dd> {{ obtenerEdad() }} </dd>
+</dl>
+
+<button (click)="cambiarNombre()">
+  Cambiar Heroe
+</button>
+
+<button (click)="cambiarEdad()">
+  Cambiar edad
+</button>

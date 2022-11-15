@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContadorComponent } from './contador 4-41-42/contador.component';
+import { HeroeCoponent } from './heroes/heroe/heroe.component';
 
 import { PruebacompounetComponent } from './primerprueba/pruebacompounet/pruebacompounet.component';
 
@@ -11,7 +12,8 @@ import { PruebacompounetComponent } from './primerprueba/pruebacompounet/pruebac
   declarations: [
     AppComponent,
     PruebacompounetComponent,
-    ContadorComponent
+    ContadorComponent,
+    HeroeCoponent
   ],
   imports: [
     BrowserModule,
