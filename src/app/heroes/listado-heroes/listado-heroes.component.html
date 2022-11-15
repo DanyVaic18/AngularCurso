@@ -1,15 +1,33 @@
 <h1>Listado de Heroes</h1>
-<p>Usando la directica *ng For</p>
+<!--
+  let = declaracion de la variable
+  heroe === arr.forEach((ele, index)=>{return ele }) // Los elementos de un array
+  of === reccorre el array
+  heroes = es el arreglo declarado en el archivo .ts
+
+-->
 <ul type="none">
   <li *ngFor="let heroe of heroes; let i = index" >
     {{ i+1 }}.{{ heroe }}
   </li>
 </ul>
-<div>
+
+<!-- ng If (variable condicional datosComparar) -->
+<!-- ng If (variable condicional datosComparar) -->
+
+<div *ngIf="heroeBorrado !== 'No se ah borrado ningun heroe'">
   <h3>Heroue Borrado</h3>
   <span>{{ heroeBorrado }}</span>
-  <hr>
 </div>
+<!-- se parado por ; else y agregamos un identificador para seleccionar el templete nombrado-->
+<div *ngIf="heroeAgregado; else noAgregado">
+  <h3>Herue agregado <small>{{ heroeAgregado }}</small></h3>
+</div>
+<!-- Mostrar mientras la condición no se ha cumplido -->
+<ng-template #noAgregado>
+  <h3>No se agregado ningun heroe</h3>
+</ng-template>
+<hr>
 <button (click)="agregarHeroe()" [disabled]="btnAggDisabled">Agregar nuevo heroe</button>
 <button (click)="borrarHeroe()">Eliminar último heroe</button>
 <button (click)="vaciarListaHeroes()">Vaciar lista</button>

@@ -16,6 +16,7 @@ export class ListadoHeroesComponent{
     'MR-INCREIBLE'
   ]
   heroeBorrado:string = 'No se ah borrado ningun heroe'
+  heroeAgregado:string = ''
   listHeroes: string[] = [
     'SPIDER-MAN',
     'IRON-MAN',
@@ -35,6 +36,7 @@ export class ListadoHeroesComponent{
       this.btnAggDisabled = true
     }else{
       this.heroes.push(this.listHeroes[this.heroes.length])
+      this.heroeAgregado = this.heroes[this.heroes.length-1]
     }
     /*
      let numAletorio:number = Math.floor(Math.random()*listHeroes.length)
@@ -43,7 +45,7 @@ export class ListadoHeroesComponent{
   }
   borrarHeroe(){
     //let heroeBorrado = this.heroes.pop() // Almacena el herue eliminado del array
-    this.heroeBorrado = this.heroes.pop() || this.listHeroes[0]
+    this.heroeBorrado = this.heroes.pop() || 'No se ah borrado ningun heroe'
     if(this.listHeroes.length !== this.heroes.length)this.btnAggDisabled = false
   }
   vaciarListaHeroes (){
