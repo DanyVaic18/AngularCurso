@@ -28,6 +28,6 @@
   <h3>No se agregado ningun heroe</h3>
 </ng-template>
 <hr>
-<button (click)="agregarHeroe()" [disabled]="btnAggDisabled">Agregar nuevo heroe</button>
+<button (click)="agregarHeroe()" [disabled]="btnAggDisabled" [ngStyle]="colorObj">Agregar nuevo heroe</button>
 <button (click)="borrarHeroe()">Eliminar último heroe</button>
 <button (click)="vaciarListaHeroes()">Vaciar lista</button>
