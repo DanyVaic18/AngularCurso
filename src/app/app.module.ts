@@ -5,15 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContadorComponent } from './contador 4-41-42/contador.component';
 import { HeroeCoponent } from './heroes/heroe/heroe.component';
-
 import { PruebacompounetComponent } from './primerprueba/pruebacompounet/pruebacompounet.component';
+import { ListadoHeroesComponent } from './heroes/listado-heroes/listado-heroes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PruebacompounetComponent,
     ContadorComponent,
-    HeroeCoponent
+    HeroeCoponent,
+    ListadoHeroesComponent
   ],
   imports: [
     BrowserModule,

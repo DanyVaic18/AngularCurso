@@ -1,0 +1,4 @@
+Crear un componente
+ng generate component "name
+o simplificado::
+ng g c

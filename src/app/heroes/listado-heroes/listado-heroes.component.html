@@ -1,0 +1,15 @@
+<h1>Listado de Heroes</h1>
+<p>Usando la directica *ng For</p>
+<ul type="none">
+  <li *ngFor="let heroe of heroes; let i = index" >
+    {{ i+1 }}.{{ heroe }}
+  </li>
+</ul>
+<div>
+  <h3>Heroue Borrado</h3>
+  <span>{{ heroeBorrado }}</span>
+  <hr>
+</div>
+<button (click)="agregarHeroe()" [disabled]="btnAggDisabled">Agregar nuevo heroe</button>
+<button (click)="borrarHeroe()">Eliminar último heroe</button>
+<button (click)="vaciarListaHeroes()">Vaciar lista</button>
