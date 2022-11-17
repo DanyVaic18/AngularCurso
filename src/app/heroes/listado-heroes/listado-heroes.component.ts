@@ -40,15 +40,14 @@ export class ListadoHeroesComponent {
   ];
   btnAggDisabled: boolean = false;
   agregarHeroe() {
-
-
     if (this.listHeroes.length === this.heroes.length) {
       this.btnAggDisabled = true;
     } else {
       this.heroes.push(this.listHeroes[this.heroes.length]);
       this.heroeAgregado = this.heroes[this.heroes.length - 1];
-      this.listHeroes.length === this.heroes.length ?  this.colorObj['background-color'] = '#FF0101':
-      this.colorObj['background-color'] = '#000'
+      this.listHeroes.length === this.heroes.length
+        ? (this.colorObj['background-color'] = '#FF0101')
+        : (this.colorObj['background-color'] = '#000');
     }
 
     /*
@@ -61,7 +60,7 @@ export class ListadoHeroesComponent {
     this.heroeBorrado = this.heroes.pop() || 'No se ah borrado ningun heroe';
     if (this.listHeroes.length !== this.heroes.length)
       this.btnAggDisabled = false;
-      this.colorObj['background-color'] = '#000';
+    this.colorObj['background-color'] = '#000';
   }
   vaciarListaHeroes() {
     this.heroes = [];

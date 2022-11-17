@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ContadorModule } from './app-count/contador.module';
+import { AppDragonBallZModule } from './app-dragon-ball-z/app-dragon-ball-z.module';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,7 +20,8 @@ import { PruebacompounetComponent } from './primerprueba/pruebacompounet/pruebac
     BrowserModule,
     AppRoutingModule,
     HeroeModule,
-    ContadorModule
+    ContadorModule,
+    AppDragonBallZModule
   ],
   providers: [],
   bootstrap: [AppComponent]
