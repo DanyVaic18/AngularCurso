@@ -5,21 +5,48 @@
     <h3>Personajes</h3>
     <hr />
     <ul>
-      <li>Krillin - 700</li>
-      <li>Goku - 15000</li>
-      <li>Vegeta - 8500</li>
+      <li *ngFor="let personaje of personajesDbz">
+        <span style="color: black;font-weight: 700;">Nombre:</span> {{personaje.nombre}} 
+        <span style="color: black;font-weight: 700;">Poder:</span>  {{personaje.poder}}
+      </li>
     </ul>
   </div>
 
   <div class="col">
     <h3>Agregar</h3>
+
     <hr />
     <form (ngSubmit)="agregar()">
-      <input type="text" placeholder="Nombre" />
-      <input type="number" placeholder="Poder" />
+      <input
+        type="text"
+        placeholder="Nombre"
+        name="nombre"
+        [(ngModel)]="caracteristicas.nombre"
+      />
+
+      <input
+        type="number"
+        placeholder="Poder"
+        name="poder"
+        [(ngModel)]="caracteristicas.poder"
+      />
       <button type="submit">Agregar</button>
     </form>
   </div>
-
-
 </div>
+
+<!-- <span style="color: rgb(0, 0, 118);font-weight: bold;">Si esto sin useState, se puede usar en tiempo real</span>
+    <p style="text-decoration: underline;" *ngIf="caracteristicas.nombre;else tavacio" >{{caracteristicas.nombre}}</p>
+    <ng-template #tavacio>
+      <p style="text-decoration: underline;">Cabron dejaste lo dejaste vacio </p>
+    </ng-template> -->
+
+<!-- TO DATA VAINE 
+            []= Atrapamos el valor de la variable
+            ()= Emitimos el evento
+            name = como react.hooks.forms, Se declara por que si no se queja la niña
+          -->
+<!--  Sin la libreria de Angular Ng
+          [value]="caracteristicas.nombre"
+          (input)="cambiarNombre($event)"
+          -->
