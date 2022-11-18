@@ -40,9 +40,10 @@ export class DbzMainPageComponent {
       nombre: '',
       poder: '',
     }
-    if(this.caracteristicas.nombre.trim().length && this.caracteristicas.poder === null){return;}
-    this.personajesDbz.push(this.caracteristicas)
-    this.caracteristicas = caracteristicasIniciales
+    if(this.caracteristicas.nombre.trim() === ""){return;}else{
+      this.personajesDbz.push(this.caracteristicas)
+      this.caracteristicas = caracteristicasIniciales
+    }
 
   }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,Input } from '@angular/core';
 import { Personaje } from '../interface/personaje';
 
 @Component({
@@ -7,17 +7,5 @@ import { Personaje } from '../interface/personaje';
   styleUrls: ['./lista-personajes-dbz.component.css']
 })
 export class ListaPersonajesDbzComponent {
-  personajesDbz:Personaje[] = [
-    {
-      nombre:"Goku",
-      poder:200,
-    },
-    {
-      nombre:"Vegeta",
-      poder:180,
-    },
-    {
-      nombre:"Frezzer",
-      poder:210,
-    },
-  ]}
+  @Input() personajesDbz : Personaje[] = []
+}
