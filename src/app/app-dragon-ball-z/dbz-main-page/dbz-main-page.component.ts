@@ -1,14 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-dbz-main-page',
   templateUrl: './dbz-main-page.component.html',
-  styleUrls: ['./dbz-main-page.component.css']
+  styleUrls: ['./dbz-main-page.component.css'],
 })
-export class DbzMainPageComponent  {
-
-  // agregar(event:any){
-  //   evevent.prevenDefault()
-  // }
-
+export class DbzMainPageComponent {
+  agregar() {
+    console.log("vida loca")
+  }
 }
