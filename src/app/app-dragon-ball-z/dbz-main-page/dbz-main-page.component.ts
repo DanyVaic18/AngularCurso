@@ -31,19 +31,8 @@ export class DbzMainPageComponent {
     poder: '',
   };
 
-  cambiarNombre(ev:any){
-    console.log(ev.target.value)
-  }
+  // cambiarNombre(ev:any){
+  //   console.log(ev.target.value)
+  // }
 
-  agregar() {
-    const caracteristicasIniciales:Personaje = {
-      nombre: '',
-      poder: '',
-    }
-    if(this.caracteristicas.nombre.trim() === ""){return;}else{
-      this.personajesDbz.push(this.caracteristicas)
-      this.caracteristicas = caracteristicasIniciales
-    }
-
-  }
 }

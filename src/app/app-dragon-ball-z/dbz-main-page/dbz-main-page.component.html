@@ -1,29 +1,16 @@
 <h1>Pagina de Dragon ball z</h1>
 <div class="row">
   <div class="col">
-    <app-lista-personajes-dbz [personajesDbz]="personajesDbz"></app-lista-personajes-dbz>
+    <app-lista-personajes-dbz
+      [personajesDbz]="personajesDbz"
+    ></app-lista-personajes-dbz>
   </div>
 
   <div class="col">
-    <h3>Agregar</h3>
+    <app-agregar-personaje
+      [caracteristicas]="caracteristicas"
 
-    <hr />
-    <form (ngSubmit)="agregar()">
-      <input
-        type="text"
-        placeholder="Nombre"
-        name="nombre"
-        [(ngModel)]="caracteristicas.nombre"
-      />
-
-      <input
-        type="number"
-        placeholder="Poder"
-        name="poder"
-        [(ngModel)]="caracteristicas.poder"
-      />
-      <button type="submit">Agregar</button>
-    </form>
+    ></app-agregar-personaje>
   </div>
 </div>
 
@@ -33,7 +20,7 @@
       <p style="text-decoration: underline;">Cabron dejaste lo dejaste vacio </p>
     </ng-template> -->
 
-<!-- TO DATA VAINE 
+<!-- TO DATA VAINE
             []= Atrapamos el valor de la variable
             ()= Emitimos el evento
             name = como react.hooks.forms, Se declara por que si no se queja la niña
