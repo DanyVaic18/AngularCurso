@@ -7,8 +7,10 @@ import { Personaje } from '../interface/personaje';
   templateUrl: './dbz-main-page.component.html',
   styleUrls: ['./dbz-main-page.component.css'],
 })
-export class DbzMainPageComponent {
 
+
+
+export class DbzMainPageComponent {
   personajesDbz:Personaje[] = [
     {
       nombre:"Goku",

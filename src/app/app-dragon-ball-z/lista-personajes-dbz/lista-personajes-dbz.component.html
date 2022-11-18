@@ -1,0 +1,8 @@
+<h3>Personajes</h3>
+    <hr />
+    <ul>
+      <li *ngFor="let personaje of personajesDbz">
+        <span style="color: black;font-weight: 700;">Nombre:</span> {{personaje.nombre}} 
+        <span style="color: black;font-weight: 700;">Poder:</span>  {{personaje.poder | number}}
+      </li>
+    </ul>

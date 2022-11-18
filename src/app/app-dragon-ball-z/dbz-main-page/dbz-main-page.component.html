@@ -1,15 +1,7 @@
 <h1>Pagina de Dragon ball z</h1>
-
 <div class="row">
   <div class="col">
-    <h3>Personajes</h3>
-    <hr />
-    <ul>
-      <li *ngFor="let personaje of personajesDbz">
-        <span style="color: black;font-weight: 700;">Nombre:</span> {{personaje.nombre}} 
-        <span style="color: black;font-weight: 700;">Poder:</span>  {{personaje.poder}}
-      </li>
-    </ul>
+    <app-lista-personajes-dbz></app-lista-personajes-dbz>
   </div>
 
   <div class="col">
