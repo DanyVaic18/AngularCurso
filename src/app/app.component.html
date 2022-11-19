@@ -11,12 +11,14 @@
     <div class="col-4 border p-4 rounded-lg d-flex flex-column justify-content-center flex-wrap ">
       <h4 class="text-center font-weight-bold py-2">Categorías</h4>
       <div 
-        class="d-flex flex-column "
-        [ngClass]="styleSelec.c"  
+        class="d-flex flex-column mb-2 category-content"
         *ngFor="let n of arrCategorias"
         (click)="mostrarSubCat(n)"
         >
-        <span class="selected-category" [ngClass]="styleSelec.b"> {{n.name}} </span>
+        <span class="selected-category" *ngIf="n.name === veryficat;else sinNgClass"[ngClass]="styleSelec.b" > {{n.name}} </span>
+        <ng-template #sinNgClass>
+          <span class="selected-category"> {{n.name}}</span>
+        </ng-template>
         <div 
           class="option-category d-flex flex-column"
           *ngIf="n.name === veryficat"

@@ -37,14 +37,22 @@ export class AppComponent {
       ],
     },
   ];
-  veryficat: String = "" 
-  styleSelec = {  
-    c:"",
-    b:""
-  }
-  mostrarSubCat(n:categorys){
-    this.veryficat = n.name
-    this.styleSelec.c ="category-content-clic" 
-    this.styleSelec.b ="selected-category-clic"
+  veryficat: String = '';
+  styleSelec = {
+    // c: '',
+    b: '',
+  };
+  mostrarSubCat(n: categorys) {
+    if (this.veryficat === '') {
+      this.veryficat = n.name;
+      // this.styleSelec.c = 'category-content-clic';
+      this.styleSelec.b = 'selected-category-clic';
+    } else if (this.veryficat === n.name) {
+      this.veryficat = "";
+      // this.styleSelec.c = '';
+      this.styleSelec.b = '';
+    }else{
+      this.veryficat = n.name;
+    }
   }
 }
