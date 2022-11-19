@@ -4,4 +4,47 @@
 <!-- <contador></contador> -->
 <!-- <app-heroe></app-heroe> -->
 <!-- <app-listado-heroes></app-listado-heroes> -->
-<app-dbz-main-page></app-dbz-main-page>
+<!-- <app-dbz-main-page></app-dbz-main-page> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-4 border p-4 rounded-lg d-flex flex-column justify-content-center flex-wrap ">
+      <h4 class="text-center font-weight-bold py-2">Categorías</h4>
+      <div 
+        class="d-flex flex-column "
+        [ngClass]="styleSelec.c"  
+        *ngFor="let n of arrCategorias"
+        (click)="mostrarSubCat(n)"
+        >
+        <span class="selected-category" [ngClass]="styleSelec.b"> {{n.name}} </span>
+        <div 
+          class="option-category d-flex flex-column"
+          *ngIf="n.name === veryficat"
+        >
+          <span  *ngFor="let m of n.subCategorys"> {{m.name}} 
+            <hr class="dropdown-divider">
+          </span>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-8">
+
+    </div>
+  </div>
+  <!-- <div class="row my-2" *ngFor="let n of arrCategorias">
+    <div class="col-3 border shadow-sm rounded-lg">
+      <dl>
+        <dt (click)="mostrarSubCat(n)">{{ n.name }}</dt>
+        <dd *ngIf="n.name === veryficat">
+          <ul>
+            <li *ngFor="let m of n.subCategorys"> {{m.name}}</li>
+          </ul>
+        </dd>
+      </dl>
+    </div>
+  </div> 
+   <img src="../assets/Íconos/software-l.svg" class="btn-icon-only" alt="">
+-->
+</div>

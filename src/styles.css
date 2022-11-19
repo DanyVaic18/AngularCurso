@@ -5,14 +5,15 @@
 
   html, body {
     background: white;
-    margin: 20px;
+    margin: 10px;
     color: #3e4144;
     -webkit-font-smoothing: antialiased;
   }
 
 
   dd {
-    font-weight: bold;
+   
+    padding-left: 16px;
   }
 
   button {
@@ -38,14 +39,47 @@
     padding: 1px;
   }
 
-  .row{
+  /* .row{
     display: flex;
   }
   .col{
     flex-grow: 1;
     margin: 10px;
-  }
+  } */
   .input{
     display: block;
     margin: 5px;
   }
+
+.category-content{
+  
+}
+.category-content-clic{
+  border: 2px solid #FE4532;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.selected-category{
+  background-color: #F2F2F2;
+  color: #FE4532;
+  padding: 6px 6px 6px 16px;
+  margin: 4px 0px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px #d6d6d6;
+}
+.selected-category-clic{
+  background-color:  #FE4532;
+  color: #F2F2F2;
+  cursor: pointer;
+  transition: background-color 200ms ease;
+  box-shadow: none;
+  margin: 0px;
+ 
+}
+.option-category{
+  background-color: #ffffff;
+  color: #FE4532;
+  padding: 10px;
+  margin: 8px;
+}

@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { ContadorModule } from './app-count/contador.module';
 import { AppDragonBallZModule } from './app-dragon-ball-z/app-dragon-ball-z.module';
@@ -11,6 +12,7 @@ import { HeroeModule } from './heroes/heroe.module';
 import { PruebacompounetComponent } from './primerprueba/pruebacompounet/pruebacompounet.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +23,8 @@ import { PruebacompounetComponent } from './primerprueba/pruebacompounet/pruebac
     AppRoutingModule,
     HeroeModule,
     ContadorModule,
-    AppDragonBallZModule
+    AppDragonBallZModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
